@@ -7,7 +7,7 @@ module.exports = {
     react: "🍁",
     category: "Logo Maker",
     start: async(Miku, m,{pushName,prefix,text}) => {
-        if(!text.includes("|")) return m.reply(`Example: *${prefix}3dspace Atlas Bot | Team Atlas*`);
+        if(!text.includes("|")) return m.reply(`Example: *${prefix}3dspace Atlas Bot | Fazil vk*`);
         teks1 = text.split("|")[0]
         teks2 = text.split("|")[1]
         maker.textpro("https://textpro.me/create-space-3d-text-effect-online-985.html", [

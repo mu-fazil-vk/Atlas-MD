@@ -1,7 +1,7 @@
 module.exports = {
     name: "cutecheck",
     alias: ["kawaicheck"],
-    desc: "check",
+    desc: "check cuteness of a person",
     cool:3,
     react: "😍",
     category: "Fun",

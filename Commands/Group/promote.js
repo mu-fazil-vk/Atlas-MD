@@ -36,7 +36,7 @@ module.exports = {
         m.from,
         { text: `@${
           mentionedUser.split("@")[0]
-        } Senpai is already an *Admin* !`,mentions: [mentionedUser], },
+        } is already an *Admin* !`,mentions: [mentionedUser], },
         { quoted: m }
       );
     }
@@ -49,7 +49,7 @@ module.exports = {
             {
               text: `Congratulations @${
                 mentionedUser.split("@")[0]
-              } Senpai 🥳, you have been *Promoted* Successfully !`,
+              } 🥳, you have been *Promoted* Successfully !`,
               mentions: [mentionedUser],
             },
             { quoted: m }

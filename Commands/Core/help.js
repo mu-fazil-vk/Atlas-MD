@@ -27,9 +27,9 @@ if (args[0]) {
             return Miku.sendMessage(m.from,buth,{quoted:m})
         } else {
 
-let textHelpMenu = `Konnichiwa *${pushName}* Senpai,
+let textHelpMenu = `Hello *${pushName}*,
 
-I am *${botName}*, a bot developed by *Team Atlas*.
+I am *${botName}*, a bot developed by *Fazil vk*.
 
 🎀 My prefix is: *${prefix}*
 
@@ -116,7 +116,8 @@ Here's the list of my Commands.\n
 ├
 ├・🧩 ᴇʟᴇᴍᴇɴᴛ, ɪɢᴜꜱᴇʀ, 
 ├・🧩 ꜱᴄʀᴇᴇɴꜱʜᴏᴛ, ꜱᴀʏ, 
-├・🧩 ꜱᴀʏᴊᴀᴘᴀɴᴇꜱᴇ, ,ꜱᴀʏʙᴇɴɢᴀʟɪ, 
+├・🧩 ꜱᴀʏᴊᴀᴘᴀɴᴇꜱᴇ,
+├・🧩 ꜱᴀʏᴍᴀʟᴀʏᴀʟᴀᴍ, 
 ├・🧩 ꜱᴀʏʜɪɴᴅɪ, ᴜᴅɪᴄᴛɪᴏɴᴀʀʏ
 ├・🧩 Qᴜᴇꜱᴛɪᴏɴ
 ├
@@ -245,16 +246,18 @@ textHelpMenu += `╭────ꕥ NSFW ꕥ────╮
 }
           
 textHelpMenu +=`*🔰  ${botName}  🔰*
- _Powered By:_ *Team ATLAS*
-🎀 To use any of these commands type 
-" *${prefix}Command name* ".
+ _Powered By:_ *Fazil vk*
+
+🎀 To use any of these commands type " *${prefix}command_name* ".
+
 🏮 To get Support Group link type " *${prefix}support* ".
+
 🧩 To report any issues to Developer type " *${prefix}report <describe issue>* ".\n`
 
 let buttons = [
     {
-      buttonId: `${prefix}repo`,
-      buttonText: { displayText: "Source Code" },
+      buttonId: `thanks`,
+      buttonText: { displayText: "Thanks ☺️" },
       type: 1,
     },
   ];

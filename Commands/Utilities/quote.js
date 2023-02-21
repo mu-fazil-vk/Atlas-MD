@@ -79,7 +79,7 @@ module.exports = {
     await Miku.sendMessage(m.from, {sticker:stickerBuffer2}, { quoted: m }).then((result) => {
       fs.unlinkSync("quote.png");
     }).catch((err) => {
-      m.reply("An error occurd!")
+      m.reply("An error occurred!")
     });
   },
 };

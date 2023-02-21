@@ -29,7 +29,7 @@ module.exports = async (Miku, anu) => {
           }\n`
         );
         mikutext = `
-Hello @${WAuserName.split("@")[0]} Senpai,
+Hello @${WAuserName.split("@")[0]},
 
 Welcome to *${metadata.subject}*.
 
@@ -60,7 +60,7 @@ ${desc}
           }\n`
         );
         mikutext = `
-  @${WAuserName.split("@")[0]} Senpai left the group.
+  @${WAuserName.split("@")[0]} left the group.
   `;
         if (WelcomeFeature == "true") {
           Miku.sendMessage(anu.id, {

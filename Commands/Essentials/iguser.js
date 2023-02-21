@@ -10,7 +10,7 @@ module.exports = {
   start: async (Miku, m, { text, prefix, pushName,args }) => {
     if (!text)
       return m.reply(
-        `Please provide me a instagram username ${pushName} senpai !`
+        `Please provide me a instagram username Mr. ${pushName}!`
       );
     let igSearchTeram = text;
     try {
@@ -36,7 +36,7 @@ module.exports = {
     } catch (err) {
       console.log(err);
       return m.reply(
-        `An error occurd ! Please check instagram username ${pushName} senpai !`
+        `An error occurred ! Please check the instagram username Mr. ${pushName}  !`
       );
     }
   },

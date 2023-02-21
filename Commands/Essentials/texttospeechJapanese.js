@@ -17,13 +17,13 @@ module.exports = {
             message = args.join(' ');
           }
           else{
-            message = `Please provide me a text to say ${pushName} senpai !`;
+            message = `Please provide me a text to say Mr/Mrs ${pushName} !`;
           }
 
         const texttospeechurl = ttt.getAudioUrl(message, {lang: "ja", slow: false, host: "https://translate.google.com",});
         
             Miku.sendMessage(m.from, { audio: {url: texttospeechurl} ,mimetype: 'audio/mpeg' }, { quoted: m }).catch(e => {
-                m.reply(`An error Occurd !`);
+                m.reply(`An error occurred !`);
             });
     }
 }

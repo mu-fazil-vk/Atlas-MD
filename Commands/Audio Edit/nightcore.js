@@ -17,14 +17,14 @@ module.exports = {
      try{
         exec(`ffmpeg -i ${media} ${set} ${ran}`, (err, stderr, stdout) => {
             fs.unlinkSync(media)
-            if (err) return m.reply('An error Occurd !')
+            if (err) return m.reply('An error occurred !')
             let buff = fs.readFileSync(ran)
             Miku.sendMessage(m.from, { audio: buff, mimetype: 'audio/mpeg' }, { quoted : m })
             fs.unlinkSync(ran)
             })
 
      }catch(e){
-         m.reply('An error Occurd ! Please mention an Audio!')
+         m.reply('An error occurred ! Please mention an Audio!')
         }
         
     }

@@ -2,9 +2,9 @@ const axios = require("axios");
 
 module.exports = {
     name: "urbandictionary",
-    alias: ["udictionary"],
+    alias: ["udictionary", "udictionary", "udict"],
     desc: "To search something in Urban Dictionary",
-    usage: "udictionary <text>",
+    usage: "udict <text>",
     react: "🍁",
     category: "Essentials",
     start: async(Miku, m,{pushName,prefix,args,text}) => {
@@ -19,7 +19,7 @@ module.exports = {
 
              Miku.sendMessage(m.from,  {image: {url: botImage1},caption: text}, {quoted: m });
                 }).catch((err) => {
-                    m.reply(`An error Occurd !`);
+                    m.reply(`An error occurred !`);
                 }
             );
     }

@@ -7,7 +7,7 @@ module.exports = {
     react: "🍁",
     category: "Logo Maker",
     start: async(Miku, m,{pushName,prefix,text}) => {
-        if(!text.includes("|")) return m.reply(`Example: *${prefix}glitch2 Atlas Bot | Team Atlas*`);
+        if(!text.includes("|")) return m.reply(`Example: *${prefix}glitch2 Atlas Bot | Fazil vk*`);
         teks1 = text.split("|")[0]
         teks2 = text.split("|")[1]
         maker.textpro("https://textpro.me/create-a-glitch-text-effect-online-free-1026.html", [

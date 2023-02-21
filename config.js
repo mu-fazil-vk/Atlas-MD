@@ -12,9 +12,9 @@
 /-----------------------------------------------------------------------------------/
 / Author and Main Developer: FantoX                                                 /
 / Github: https://github.com/FantoX001/Atlas-MD                                     /
-/ Powered By: Team ATLAS                                                            /
+/ Powered By: Fazil vk                                                            /
 /-----------------------------------------------------------------------------------/
-/             Meet Team ATLAS who holds all rights to this repository:              /
+/             Meet Fazil vk who holds all rights to this repository:              /
 /                                                                                   /
 / 1. Pratyush - https://github.com/pratyush4932                                     /
 / 2. Ahmii - https://github.com/Ahmii-kun                                          /               
@@ -48,7 +48,7 @@ global.prefa = process.env.PREFIX || "-";
 global.tenorApiKey =
   process.env.TENOR_API_KEY || "AIzaSyCyouca1_KKy4W_MG1xsPzuku5oa8W358c";
 global.packname = process.env.PACKNAME || `Atlas MD`;
-global.author = process.env.AUTHOR || "by: Team Atlas";
+global.author = process.env.AUTHOR || "by: Fazil vk";
 global.port = process.env.PORT || "8000";
 
 
@@ -57,18 +57,18 @@ global.port = process.env.PORT || "8000";
 
 global.mess = {
   jobdone: "Job done...",
-  useradmin: "Sorry, only *Group Admins* can use this command *Baka*!",
+  useradmin: "Sorry, only *Group Admins* can use this command!",
   botadmin:
-    "Sorry, i cant execute this command without being an *Admin* of this group.",
-  botowner: "Only my *Owner* can use this command, Baka!",
-  grouponly: "This command is only made for *Groups*, Baka!",
-  privateonly: "This command is only made for *Private Chat*, Baka!",
+    "Sorry, i can't execute this command without being an *Admin* of this group.",
+  botowner: "Only my *Owner* can use this command!",
+  grouponly: "This command is only made for *Groups*!",
+  privateonly: "This command is only made for *Private Chat*!",
   botonly: "Only the *Bot itself* can use this command!",
-  waiting: "Chotto Matte...",
-  nolink: "Please provide me *link*, Baka!",
-  error: "An error occurd!",
-  banned: `You are *Banned* fron using commands!  \n\nType *${prefa}owner* or *${prefa}support* to submit a request to unban yourself !`,
+  waiting: "Wait a minute...",
+  nolink: "Please provide me a *link*!",
+  error: "An error occured!",
+  banned: `You are *Banned* from using commands!  \n\nType *${prefa}owner* or *${prefa}support* to submit a request to unban yourself !`,
   bangc: "This Group is *Banned* from using Commands!",
-  nonsfw: "Dont be a pervert Baka! This is not a NSFW enabled group!",
+  nonsfw: "Dont be a pervert fool! This is not a NSFW enabled group!",
 };
 

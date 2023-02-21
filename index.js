@@ -12,9 +12,9 @@
 /-----------------------------------------------------------------------------------/
 / Author and Main Developer: FantoX                                                 /
 / Github: https://github.com/FantoX001/Atlas-MD                                     /
-/ Powered By: Team ATLAS                                                            /
+/ Powered By: Fazil vk                                                            /
 /-----------------------------------------------------------------------------------/
-/             Meet Team ATLAS who holds all rights to this repository:              /
+/             Meet Fazil vk who holds all rights to this repository:              /
 /                                                                                   /
 / 1. Pratyush - https://github.com/pratyush4932                                     /
 / 2. Ahmii - https://github.com/kirito2355                                          /               
@@ -165,7 +165,7 @@ async function startMiku() {
         whitespaceBreak: true
     }), 'yellow'))
 
-    console.log(color('\nHello, I am Fantox, the main developer of this bot.\n\nThanks for using: Atlas MD made by my Team Atlas.', 'aqua'))
+    console.log(color('\nHello, I am Fantox, the main developer of this bot.\n\nThanks for using: Atlas MD made by my Fazil vk.', 'aqua'))
     console.log(color('\nYou can follow me on GitHub: FantoX001\n\n', 'aqua'))
 
 

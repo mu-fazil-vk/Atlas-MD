@@ -20,7 +20,7 @@ module.exports = {
     ];
     let bmffg = {
       image: Image,
-      caption: `Miku Hentai API by *Team Atlas*\n\n*API link:* https://shubhapratimbiswas.tech\n`,
+      caption: `Miku Hentai API by *Fazil vk*\n\n*API link:* https://shubhapratimbiswas.tech\n`,
       footer: `*${botName}*`,
       buttons: Button,
       headerType: 4,

@@ -12,9 +12,9 @@
 /-----------------------------------------------------------------------------------/
 / Author and Main Developer: FantoX                                                 /
 / Github: https://github.com/FantoX001/Atlas-MD                                     /
-/ Powered By: Team ATLAS                                                            /
+/ Powered By: Fazil vk                                                            /
 /-----------------------------------------------------------------------------------/
-/             Meet Team ATLAS who holds all rights to this repository:              /
+/             Meet Fazil vk who holds all rights to this repository:              /
 /                                                                                   /
 / 1. Pratyush - https://github.com/pratyush4932                                     /
 / 2. Ahmii - https://github.com/Ahmii-kun                                          /               
@@ -424,7 +424,7 @@ module.exports = async (Miku, m, commands, chatUpdate, store) => {
         
         const flags = args.filter((arg) => arg.startsWith("--"));
         if (body.startsWith(prefix) && !icmd) {
-            let mikutext = `No such command programmed *${pushname}* senpai! Type *${prefix}help* or press the button below to get my full command list!\n`;
+            let mikutext = `Oh my *${pushname}*, there is no such command programmed! Type *${prefix}help* or press the button below to get my full command list!\n`;
 
             let Button = [{
                 buttonId: `${prefix}help`,
@@ -471,7 +471,7 @@ module.exports = async (Miku, m, commands, chatUpdate, store) => {
             text.endsWith("--?")
         ) {
             let data = [];
-            if (cmd.alias) data.push(`*Alias :* ${cmd.alias.join(", ")}`);
+            if (cmd.alias) data.push(`*Command :* ${cmd.alias.join(", ")}`);
 
             if (cmd.desc) data.push(`*Description :* ${cmd.desc}\n`);
             if (cmd.usage)
