@@ -42,7 +42,7 @@ module.exports = {
       
             if(err != 1){
               var gpt_reply = response.data.choices[0].text.trim()
-              Miku.sendMessage(m.from, { text: `*Chat-GPT:*\n ${gpt_reply}` }, { quoted: m })
+              Miku.sendMessage(m.from, { text: `*Chat-GPT:*\n\n ${gpt_reply}` }, { quoted: m })
               }else{
               err = 0
               }
