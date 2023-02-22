@@ -29,8 +29,8 @@ module.exports = {
         }
 
         await Miku.updateBlockStatus(mentionedUser, 'unblock').then(async (res) => {
-            Miku.sendMessage(m.from, { text: `Successfully *Un-Blocked* @${mentionedUser.split("@")[0]} Senpai !`, mentions: [mentionedUser] }, { quoted: m }).catch((e)=>{
-                Miku.sendMessage(m.from, { text: `Failed to Un-block @${mentionedUser.split("@")[0]} Senpai ! Maybe he is not blocked !` , mentions: [mentionedUser]}, { quoted: m })
+            Miku.sendMessage(m.from, { text: `Successfully *Un-Blocked* @${mentionedUser.split("@")[0]} !`, mentions: [mentionedUser] }, { quoted: m }).catch((e)=>{
+                Miku.sendMessage(m.from, { text: `Failed to Un-block @${mentionedUser.split("@")[0]} ! Maybe he is not blocked !` , mentions: [mentionedUser]}, { quoted: m })
             }
             )
             }).catch((e)=>{

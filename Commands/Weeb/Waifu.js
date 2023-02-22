@@ -18,7 +18,7 @@ var Button = [
     ];
     let waf = {
       image: {url:waifus.data.url},
-      caption: `Here I am senpai!!😜`,
+      caption: `Here I am the girl!!😜`,
       footer: `*${botName}*`,
       buttons: Button,
       headerType: 4,

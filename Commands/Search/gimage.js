@@ -20,7 +20,7 @@ module.exports = {
         n = result
         images = n[Math.floor(Math.random() * n.length)].url
 
-        let resText = `        *『  Image Search Engine  』*\n\n\n_🎀 Search Term:_ *${ImagesearchTerm}*\n`;
+        let resText = ` *『  Image Search Engine  』*\n\n\n_🎀 Search Term:_ *${ImagesearchTerm}*\n`;
     
         let buttons = [
             {buttonId: `${prefix}gimage ${ImagesearchTerm}`, buttonText: {displayText: '>>'}, type: 1}

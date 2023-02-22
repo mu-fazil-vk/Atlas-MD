@@ -22,10 +22,10 @@ module.exports = {
             console.log(error);
             });
 
-        let resText = `  *『  ⚡️ Google Search Engine ⚡️  』*\n\n\n_🔍 Search Term:_ *${googlesearchTerm}*\n\n\n`
+        let resText = ` *『  ⚡️ Google Search Engine ⚡️  』*\n\n\n_🔍 Search Term:_ *${googlesearchTerm}*\n\n\n`
 
         for(num=0; num<10; num++){
-            resText += `_📍 Result:_ *${num+1}*\n\n_🎀 Title:_ *${googleSearch[num].title}*\n\n_🔶 Description:_ *${googleSearch[num].snippet}*\n\n_🔷 Link:_ *${googleSearch[num].link}*\n\n\n`;
+            resText += `_📍 Result:_ *${num+1}*\n\n_🎀 Title:_ *${googleSearch[num].title}*\n\n_🔶 Description:_ *${googleSearch[num].snippet}*\n\n_🔷 Link:_ *${googleSearch[num].link}*\n\n\nBy *${botName}*\n\n`;
         }
 
       await Miku.sendMessage(

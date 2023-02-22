@@ -20,7 +20,7 @@ module.exports = {
       async (_) => await lyrics(LyricssearchTerm)
     );
 
-    let resText = `  *『  ⚡️ Lyrics Search Engine ⚡️  』*\n\n\n_Search Term:_ *${LyricssearchTerm}*\n\n\n*📍 Lyrics:* \n\n${resultlyrics.lyrics}\n\n`;
+    let resText = `*『  ⚡️ Lyrics Search Engine ⚡️  』*\n\n\n_Search Term:_ *${LyricssearchTerm}*\n\n\n*📍 Lyrics:* \n\n${resultlyrics.lyrics}\n\n\nBy *${botName}*\n\n`;
 
     await Miku.sendMessage(
       m.from,

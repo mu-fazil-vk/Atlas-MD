@@ -128,7 +128,7 @@ var songUrl = match[3];
                 let ments = [m.sender]
                 const listMessage = {
                 footer: `${botName}`,
-                text: `*${botName}* powered by *𝙏𝙚𝙖𝙢 𝘼𝙩𝙡𝙖𝙨*`,
+                text: `*${botName}* powered by *Fazil vk*`,
                 buttonText: 'Menu ⎙',
                 mentions: ments,
                 sections

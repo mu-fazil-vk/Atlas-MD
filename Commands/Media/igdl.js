@@ -9,7 +9,7 @@ module.exports = {
     alias:["instagram","instadl","instagramdl","igvid"],
     desc: "To download an instagram video or image",
     category: "Media",
-    usage: `igdl <video /> image link>`,
+    usage: `igdl <video / image link>`,
     react: "🍁",
     start: async (Miku, m, { text, prefix, args }) => {
 

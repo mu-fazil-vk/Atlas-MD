@@ -29,12 +29,12 @@ module.exports = {
         }
 
         await Miku.updateBlockStatus(mentionedUser, 'block').then(async (res) => {
-            Miku.sendMessage(m.from, { text: `Successfully *Blocked* @${mentionedUser.split("@")[0]} Senpai !`, mentions: [mentionedUser] }, { quoted: m }).catch((e)=>{
-                Miku.sendMessage(m.from, { text: `Failed to block @${mentionedUser.split("@")[0]} Senpai ! Maybe he is already blocked !` , mentions: [mentionedUser]}, { quoted: m })
+            Miku.sendMessage(m.from, { text: `Successfully *Blocked* @${mentionedUser.split("@")[0]} !`, mentions: [mentionedUser] }, { quoted: m }).catch((e)=>{
+                Miku.sendMessage(m.from, { text: `Failed to block @${mentionedUser.split("@")[0]} ! Maybe he is already blocked !` , mentions: [mentionedUser]}, { quoted: m })
             }
             )
             }).catch((e)=>{
-                Miku.sendMessage(m.from, { text: `Failed to block @${mentionedUser.split("@")[0]} Senpai ! Maybe he is already blocked !` , mentions: [mentionedUser]}, { quoted: m })
+                Miku.sendMessage(m.from, { text: `Failed to block @${mentionedUser.split("@")[0]} ! Maybe he is already blocked !` , mentions: [mentionedUser]}, { quoted: m })
             }
             )
     },

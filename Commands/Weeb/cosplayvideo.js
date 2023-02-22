@@ -19,7 +19,7 @@ module.exports = {
     let bmffg = {
       video: VID,
       gifPlayback:true,
-      caption: `Cosplayvideo API by *Fazil vk*\n\n*API link:* https://shubhapratimbiswas.tech\n`,
+      caption: `Cosplayvideo By *${botName}*\n`,
       footer: `*${botName}*`,
       buttons: Button,
       headerType: 4,
