@@ -18,7 +18,7 @@ module.exports = {
             { quoted: m }
           );
 
-        let message = args[0];
+        let message = args.join(" ");
 
 		const configuration = new Configuration({
 			apiKey: chat_gpt,
@@ -32,11 +32,11 @@ module.exports = {
 		  }).catch((error) => {
 			err = 1;
             console.log(error);
-            Miku.sendMessage(m.from, { text: `Error private / not found` }, { quoted: m })
+            Miku.sendMessage(m.from, { text: `Error occurred` }, { quoted: m })
         });
-		  var gpt_reply = completion.data.choices[0].text
 		  if(err != 1){
-			Miku.sendMessage(m.from, { text: gpt_reply }, { quoted: m })
+			var gpt_reply = completion.data.choices[0].text
+			Miku.sendMessage(m.from, { text: `*Chat-GPT:*\n ${gpt_reply}` }, { quoted: m })
 		  }else{
 			err = 0
 		  }
