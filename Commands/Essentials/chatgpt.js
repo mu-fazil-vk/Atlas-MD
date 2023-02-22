@@ -22,7 +22,7 @@ module.exports = {
         let message = args[0];
 
 		const configuration = new Configuration({
-			apiKey: config.chat_gpt,
+			apiKey: chat_gpt,
 		  });
 		
 		  const openai = new OpenAIApi(configuration);
