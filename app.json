@@ -34,6 +34,9 @@
         },
         "MONGODB": {
             "description": "Your MOngoDB URL. If you don't have any read PublicKeys.md to get a public MongoDB URL. Or copy paste it: mongodb+srv://fantox001:zjmbvgwr52@cluster0.qh05pl9.mongodb.net/?retryWrites=true&w=majority"
+        },
+        "CHAT_GPT": {
+            "description": "Your Chat-GPT secret, get it from openapi website"
         }
     },
     "buildpacks": [
