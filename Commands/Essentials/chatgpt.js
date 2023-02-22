@@ -40,13 +40,13 @@ module.exports = {
                 Miku.sendMessage(m.from, { text: `Error occurred` }, { quoted: m })
             });
       
-        return response.data.choices[0].text.trim()
+            if(err != 1){
+              var gpt_reply = response.data.choices[0].text.trim()
+              Miku.sendMessage(m.from, { text: `*Chat-GPT:*\n ${gpt_reply}` }, { quoted: m })
+              }else{
+              err = 0
+              }
       }
-		  if(err != 1){
-			var gpt_reply = completion()
-			Miku.sendMessage(m.from, { text: `*Chat-GPT:*\n ${gpt_reply}` }, { quoted: m })
-		  }else{
-			err = 0
-		  }
+      completion(message);
 }
 }
