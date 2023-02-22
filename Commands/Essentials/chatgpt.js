@@ -1,4 +1,3 @@
-const { e } = require("mathjs");
 const { Configuration, OpenAIApi } = require("openai");
 require ('../../config.js')
 
@@ -33,11 +32,11 @@ module.exports = {
 		  }).catch((error) => {
 			err = 1;
             console.log(error);
-            sendMessage(m.from, { text: `Error private / not found` }, { quoted: m })
+            Miku.sendMessage(m.from, { text: `Error private / not found` }, { quoted: m })
         });
 		  var gpt_reply = completion.data.choices[0].text
 		  if(err != 1){
-			sendMessage(m.from, { text: gpt_reply }, { quoted: m })
+			Miku.sendMessage(m.from, { text: gpt_reply }, { quoted: m })
 		  }else{
 			err = 0
 		  }
