@@ -14,7 +14,7 @@ module.exports = {
         if (!args[0])
           return Miku.sendMessage(
             m.from,
-            { text: `Please provide message/question!\n\n_eg: ${prefix}gpt write about earth` },
+            { text: `Please provide message/question!\n\n_eg: ${prefix}gpt write about earth_` },
             { quoted: m }
           );
 
