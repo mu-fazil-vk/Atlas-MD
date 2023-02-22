@@ -26,16 +26,24 @@ module.exports = {
 		
 		  const openai = new OpenAIApi(configuration);
 		
-		  const completion = await openai.createCompletion({
-			model: "text-davinci-003",
-			prompt: message,
-		  }).catch((error) => {
-			err = 1;
-            console.log(error);
-            Miku.sendMessage(m.from, { text: `Error occurred` }, { quoted: m })
-        });
+		  const completion = async (text) => {
+        const prompt = text;
+      
+        const response = await openai.createCompletion({
+          model: "text-davinci-003",
+          prompt: prompt,
+          max_tokens: 700,
+          temperature: 0.7,
+        }).catch((error) => {
+          err = 1;
+                console.log(error);
+                Miku.sendMessage(m.from, { text: `Error occurred` }, { quoted: m })
+            });
+      
+        return response.data.choices[0].text.trim()
+      }
 		  if(err != 1){
-			var gpt_reply = completion.data.choices[0].text
+			var gpt_reply = completion()
 			Miku.sendMessage(m.from, { text: `*Chat-GPT:*\n ${gpt_reply}` }, { quoted: m })
 		  }else{
 			err = 0

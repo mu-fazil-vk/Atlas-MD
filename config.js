@@ -28,9 +28,6 @@
 /                                                                                   / 
 /----------------------------------------------------------------------------------*/
 
-const fs = require("fs");
-const { mkchar } = require("./Database/dataschema.js");
-require("./BotCharacters.js");
 
 require("dotenv").config();
 let gg = process.env.MODS;
@@ -52,6 +49,9 @@ global.packname = process.env.PACKNAME || `Fazil vk`;
 global.author = process.env.AUTHOR || "by: Fazil vk";
 global.port = process.env.PORT || "8000";
 
+module.exports = {
+  mongodb: global.mongodb,
+};
 
 
 // ---------------------Do Not Modify this part------------------- //

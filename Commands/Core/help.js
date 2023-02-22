@@ -261,6 +261,11 @@ let buttons = [
       buttonText: { displayText: "Thanks ☺️" },
       type: 1,
     },
+    {
+      buttonId: `${prefix}owner`,
+      buttonText: { displayText: "Owner(s)" },
+      type: 1,
+    },
   ];
   let buttonMessage = {
     video: botVideo, gifPlayback: true,
