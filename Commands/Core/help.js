@@ -273,7 +273,7 @@ let buttons = [
   if (botName == "Spark-X") {
     var botImages = ['spark-x1.jpg', 'spark-x2.jpg']
     const selectImage = botImages[Math.floor(Math.random()*botImages.length)];
-    const selectedImage = fs.readFileSync(`./Assets/${selectImage}`)
+    const selectedImage = fs.readFileSync(`../../Assets/${selectImage}`)
   let buttonMessage = {
     Image: selectedImage,
     caption: textHelpMenu,
