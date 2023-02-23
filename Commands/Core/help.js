@@ -267,6 +267,19 @@ let buttons = [
       type: 1,
     },
   ];
+  
+  if (botName == "Spark-X") {
+    var botImages = [botImage1, botImage2]
+    const selectImage = Math.floor(Math.random()*botImages.length);
+  let buttonMessage = {
+    Image: selectImage,
+    caption: textHelpMenu,
+    buttons: buttons,
+    headerType: 4,
+  };
+
+  await Miku.sendMessage(m.from, buttonMessage, { quoted: m });
+}else{
   let buttonMessage = {
     video: botVideo, gifPlayback: true,
     caption: textHelpMenu,
@@ -275,6 +288,8 @@ let buttons = [
   };
 
   await Miku.sendMessage(m.from, buttonMessage, { quoted: m });
+}
+
 }
   }
 }
