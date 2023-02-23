@@ -269,8 +269,9 @@ let buttons = [
   ];
   
   if (botName == "Spark-X") {
-    var botImages = ['https://telegra.ph/file/b955ea0fa0455900af4a3.jpg', 'https://telegra.ph/file/cb1b561d2a5013f482937.jpg']
+    var botImages = ['spark-x1.jpg', 'sparx2']
     const selectImage = Math.floor(Math.random()*botImages.length);
+    const selectedImage = fs.readFileSync(`./Assets/${selectImage}`)
   let buttonMessage = {
     Image: selectImage,
     caption: textHelpMenu,
