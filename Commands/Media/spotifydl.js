@@ -6,7 +6,7 @@ module.exports = {
   alias: ["sdl"],
   desc: "To download a song from Spotify",
   category: "Media",
-  usage: `sdl <song name>`,
+  usage: `sdl <song url>`,
   react: "🍁",
   start: async (Miku, m, { text, prefix, args }) => {
     if (!args[0])
