@@ -274,7 +274,7 @@ let buttons = [
     var botImages = ["https://telegra.ph/file/b955ea0fa0455900af4a3.jpg", "https://telegra.ph/file/cb1b561d2a5013f482937.jpg"]
     const selectImage = await botImages[Math.floor(Math.random()*botImages.length)];
   let buttonMessage = {
-    Image: { url: selectImage },
+    Image: { url: 'https://telegra.ph/file/b955ea0fa0455900af4a3.jpg' },
     caption: textHelpMenu,
     buttons: buttons,
     headerType: 4,
