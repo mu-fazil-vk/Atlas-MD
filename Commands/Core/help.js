@@ -269,7 +269,7 @@ let buttons = [
   ];
   
   if (botName == "Spark-X") {
-    var botImages = [botImage1, botImage2]
+    var botImages = ['https://telegra.ph/file/b955ea0fa0455900af4a3.jpg', 'https://telegra.ph/file/cb1b561d2a5013f482937.jpg']
     const selectImage = Math.floor(Math.random()*botImages.length);
   let buttonMessage = {
     Image: selectImage,
