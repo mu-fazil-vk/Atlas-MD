@@ -271,7 +271,7 @@ let buttons = [
   ];
   
   if (botName == "Spark-X") {
-    var botImages = ['spark-x1.jpg', 'sparx2']
+    var botImages = ['spark-x1.jpg', 'spark-x2.jpg']
     const selectImage = botImages[Math.floor(Math.random()*botImages.length)];
     const selectedImage = fs.readFileSync(`./Assets/${selectImage}`)
   let buttonMessage = {
