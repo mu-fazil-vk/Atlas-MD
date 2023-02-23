@@ -1,3 +1,5 @@
+const fs = require("fs");
+
 module.exports = {
   name: "help",
   alias: ["menu", "h", "helpm", "helpmenu"],
@@ -273,7 +275,7 @@ let buttons = [
     const selectImage = Math.floor(Math.random()*botImages.length);
     const selectedImage = fs.readFileSync(`./Assets/${selectImage}`)
   let buttonMessage = {
-    Image: selectImage,
+    Image: selectedImage,
     caption: textHelpMenu,
     buttons: buttons,
     headerType: 4,

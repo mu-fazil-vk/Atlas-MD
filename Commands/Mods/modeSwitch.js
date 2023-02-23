@@ -24,12 +24,13 @@ module.exports = {
           }
 
       let checkdata = await mkchar.findOne({ id: '1'});
-      var groupe = await Miku.groupMetadata(m.from);
+      /*var groupe = await Miku.groupMetadata(m.from);
       var members = groupe["participants"];
       var mems = [];
       members.map(async (adm) => {
         mems.push(adm.id.replace("c.us", "s.whatsapp.net"));
       });
+      */
 
       if (args[0] === "private") {
         if (!checkdata) {
