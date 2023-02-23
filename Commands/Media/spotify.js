@@ -6,7 +6,7 @@ module.exports = {
   alias: ["splay"],
   desc: "To play a song from Spotify",
   category: "Media",
-  usage: `${prefix}spotify <song name>`,
+  usage: `spotify <song name>`,
   react: "🍁",
   start: async (Miku, m, { text, prefix, args }) => {
 	var themeemoji = '🍁'
