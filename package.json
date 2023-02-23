@@ -90,6 +90,7 @@
     "remove.bg": "^1.3.0",
     "request": "^2.88.2",
     "rumus-bdr": "^1.0.0",
+    "spotifydl-x": "^0.3.0",
     "upscaler": "^1.0.0-beta.13",
     "util": "^0.12.5",
     "wa-sticker-formatter": "^4.3.2",
