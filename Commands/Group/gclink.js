@@ -3,7 +3,7 @@ require("../../Core.js");
 
 module.exports = {
   name: "grouplink",
-  alias: ["gclink"],
+  alias: ["gclink, invite"],
   desc: "To get concurrent group link.",
   category: "Group",
   usage: "gclink",
