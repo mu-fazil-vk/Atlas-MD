@@ -1,4 +1,9 @@
 const axios = require("axios");
+const {
+  Sticker,
+  createSticker,
+  StickerTypes,
+} = require("wa-sticker-formatter");
 
 module.exports = {
   name: "stickersearch",
