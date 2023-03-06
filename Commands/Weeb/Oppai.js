@@ -1,15 +1,15 @@
-const axios = require('axios')
+const axios = require("axios");
 
 module.exports = {
-    name: "oppai",
-    alias: ["boobs","oppais"],
-    desc: "Get anime big bo*bs girls picture.",
-    react: "🥵",
-    category: "Weeb",
-    start: async(Miku, m,{pushName,prefix}) => {
-        let oppai = await axios.get('https://nekosenpai-apis.onrender.com/oppai');  
+  name: "oppai",
+  alias: ["boobs", "oppais"],
+  desc: "Get anime bog boobs girls picture.",
+  react: "🥵",
+  category: "Weeb",
+  start: async (Miku, m, { pushName, prefix }) => {
+    let oppai = await axios.get("https://nekosenpai-apis.onrender.com/oppai");
 
-let Button = [
+    let Button = [
       {
         buttonId: `${prefix}oppai`,
         buttonText: { displayText: `>>` },
@@ -17,8 +17,8 @@ let Button = [
       },
     ];
     let oppais = {
-      image: {url:oppai.data.url},
-      caption: `Do you love tits too ${pushName}... ?`,
+      image: { url: oppai.data.url },
+      caption: `Do you love tits too Mr/Mrs ${pushName} ?`,
       footer: `*${botName}*`,
       buttons: Button,
       headerType: 4,
@@ -26,5 +26,5 @@ let Button = [
     await Miku.sendMessage(m.from, oppais, { quoted: m }).catch((err) => {
       return "Error!";
     });
-}, 
+  },
 };

@@ -1,4 +1,4 @@
-const { Anime } =require("@shineiichijo/marika")
+const { Anime } = require("@shineiichijo/marika");
 const client = new Anime();
 
 module.exports = {
@@ -20,9 +20,11 @@ module.exports = {
     let anime = await client.searchAnime(AnimesearchTerm);
 
     let result = anime.data[0];
-    let details = ` *『  Anime Search Engine  』*\n\n\n*🎀 Anime Title:* ${result.title}\n`;
+    let details = `       *『  Anime Search Engine  』*\n\n\n*🎀 Anime Title:* ${result.title}\n`;
     details += `\n*🎋 Format:* ${result.type}\n`;
-    details += `*📈 Status:* ${result.status.toUpperCase().replace(/\_/g, " ")}\n`;
+    details += `*📈 Status:* ${result.status
+      .toUpperCase()
+      .replace(/\_/g, " ")}\n`;
     details += `*🍥 Total episodes:* ${result.episodes}\n`;
     details += `*🎈 Duration:* ${result.duration}\n`;
     details += `*🧧 Genres:*\n`;
@@ -43,9 +45,11 @@ module.exports = {
     details += `*🎇 Rating:* ${result.rating}\n`;
     details += `*🏅 Rank:* ${result.rank}\n\n`;
     details += `\n*🌐 URL:* ${result.url}\n\n`;
-    details += `\n\nBy *${botName}*\n\n`;
 
-      await Miku.sendMessage(m.from,{image:{url:result.images.jpg.large_image_url},caption:details},{quoted:m});
-    
+    await Miku.sendMessage(
+      m.from,
+      { image: { url: result.images.jpg.large_image_url }, caption: details },
+      { quoted: m }
+    );
   },
 };

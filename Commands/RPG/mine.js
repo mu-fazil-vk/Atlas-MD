@@ -1,13 +1,7 @@
-const mongoose = require("mongoose");
-require("../../config.js");
-require("../../Core.js");
 const config = require('../../config');
 const { player } = require("../../Database/rpgschema.js");
 const eco = require('discord-mongoose-economy')
 const ty = eco.connect(config.mongodb);
-const fs = require("fs");
-
-
 
 module.exports = {
     name: "mine",
@@ -76,7 +70,7 @@ let ments = [m.sender]
 
 const listMessage = {
 footer: `*${botName}*`,
-text: 'Powered By Fazil vk',
+text: 'Powered By TEAM ATLAS',
 title: con,
 buttonText: `CLICK HERE ⎙`,
 mentions: ments,
@@ -87,7 +81,3 @@ await Miku.sendMessage(m.from, listMessage,{ quoted:m })
 
 }
 }
-
-
-
-

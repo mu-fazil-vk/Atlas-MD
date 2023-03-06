@@ -1,5 +1,5 @@
 const axios = require("axios");
-const { Sticker, createSticker, StickerTypes } = require('wa-sticker-formatter')
+const { Sticker, StickerTypes } = require('wa-sticker-formatter')
 const fs = require("fs");
 
 module.exports = {
@@ -79,7 +79,7 @@ module.exports = {
     await Miku.sendMessage(m.from, {sticker:stickerBuffer2}, { quoted: m }).then((result) => {
       fs.unlinkSync("quote.png");
     }).catch((err) => {
-      m.reply("An error occurred!")
+      m.reply("An error occurd!")
     });
   },
 };
