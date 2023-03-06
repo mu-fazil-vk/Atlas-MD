@@ -279,41 +279,37 @@ module.exports = async (Miku, m, commands, chatUpdate, store) => {
     //---------------------------------- Self/public/Private mode Configuration ------------------------------------//
 
     let modSTATUS = await mku.findOne({
-      id: m.sender,
-    });
-    var modStatus = "false";
-    if (!modSTATUS) {
+      id: m.sender
+  });
+  var modStatus = "false"
+  if (!modSTATUS){
+
       await mku.create({ id: m.sender, addedMods: "false" });
       modStatus = modSTATUS.addedMods || "false";
-    }
-    if (modSTATUS) {
+  }
+  if (modSTATUS) {
       modStatus = modSTATUS.addedMods || "false";
-    }
+  }
 
-    let botModeSet = await mkchar.findOne({
-      id: "1",
-    });
-    var workerMode = "false";
-    if (botModeSet) {
+  let botModeSet = await mkchar.findOne({
+      id: '1'
+  });
+  var workerMode = "false";
+  if (botModeSet) {
       workerMode = botModeSet.privateMode || "false";
       if (workerMode == "true") {
-        if (
-          !global.owner.includes(`${m.sender.split("@")[0]}`) &&
-          modStatus == "false" &&
-          isCmd &&
-          m.sender != botNumber
-        ) {
-          console.log("\nCommand Rejected ! Bot is in private mode !\n");
-          return;
-        }
+          if (!global.owner.includes(`${m.sender.split("@")[0]}`) && modStatus == "false" && isCmd && m.sender != botNumber) {
+              console.log("\nCommand Rejected ! Bot is in private mode !\n");
+              return;
+          }
       }
       if (workerMode == "self") {
-        if (m.sender != botNumber && isCmd) {
-          console.log("\nCommand Rejected ! Bot is in Self mode !\n");
-          return;
-        }
+          if (m.sender != botNumber && isCmd) {
+              console.log("\nCommand Rejected ! Bot is in Self mode !\n");
+              return;
+          }
       }
-    }
+  }
 
     //-------------------------------------- Group CMD On/OFF Configuration ----------------------------------------//
 
