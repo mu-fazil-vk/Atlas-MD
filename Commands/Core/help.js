@@ -597,12 +597,12 @@ textHelpMenu += `*🔰  ${botName}  🔰*
           },
         ];
   
-        /*
+        
   if (botName == "Spark-X") {
-    var botImages = ["spark-x1", "spark-x2"]
+    var botImages = [botVideo, botImage1, botImage2, botImage3, botImage4, botImage5, botImage6]
     const selectImage = botImages[Math.floor(Math.random() * botImages.length)];
   let buttonMessage = {
-    image: fs.readFileSync(`./Assets/${selectImage}.jpg`),
+    image: { url: selectImage},
     caption: textHelpMenu,
     buttons: buttons,
     footer: `*${botName}*`,
@@ -611,7 +611,7 @@ textHelpMenu += `*🔰  ${botName}  🔰*
 
   await Miku.sendMessage(m.from, buttonMessage, { quoted: m });
   }else{
-  */
+
     let buttonMessage = {
       video: { url: botVideo },
       gifPlayback: true,
@@ -622,7 +622,7 @@ textHelpMenu += `*🔰  ${botName}  🔰*
     };
 
     await Miku.sendMessage(m.from, buttonMessage, { quoted: m });
-  //}
+  }
 
   }
   }
