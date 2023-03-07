@@ -294,6 +294,26 @@ textHelpMenu += `*🔰  ${botName}  🔰*
 
       let favSongs = [
         "dandilions",
+        "chillout",
+        "lofi love",
+        "pink moon",
+        "blessing",
+        "placid acid",
+        "lonely sunday",
+        "lofty",
+        "summer vibing",
+        "tum hi ho",
+        "tum hi ho reverbed",
+        "tum hi ho slowed",
+        "channa mereya",
+        "channa mereya reverbed",
+        "channa mereya slowed",
+        "raabta",
+        "raabta slowed",
+        "raabta reverbed",
+        "enna sona",
+        "enna sona reverbed",
+        "enna sona slowed",
         "night changes",
         "heat waves",
         "counting stars",
@@ -577,6 +597,7 @@ textHelpMenu += `*🔰  ${botName}  🔰*
           },
         ];
   
+        /*
   if (botName == "Spark-X") {
     var botImages = ["spark-x1", "spark-x2"]
     const selectImage = botImages[Math.floor(Math.random() * botImages.length)];
@@ -590,6 +611,7 @@ textHelpMenu += `*🔰  ${botName}  🔰*
 
   await Miku.sendMessage(m.from, buttonMessage, { quoted: m });
   }else{
+  */
     let buttonMessage = {
       video: { url: botVideo },
       gifPlayback: true,
@@ -600,7 +622,7 @@ textHelpMenu += `*🔰  ${botName}  🔰*
     };
 
     await Miku.sendMessage(m.from, buttonMessage, { quoted: m });
-  }
+  //}
 
   }
   }
