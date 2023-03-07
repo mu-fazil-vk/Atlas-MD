@@ -8,7 +8,7 @@ module.exports = {
   desc: "To add blown effect in a song",
   category: "Audio Edit",
   usage: "blown <reply to audio>",
-  react: "🍁",
+  react: "🎶",
   start: async (Miku, m, { text, prefix, quoted, pushName, mime, body }) => {
     let media = await Miku.downloadAndSaveMediaMessage(quoted);
     let set = "-af acrusher=.1:1:40:0:log";

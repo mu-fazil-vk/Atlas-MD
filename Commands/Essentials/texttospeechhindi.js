@@ -5,7 +5,7 @@ module.exports = {
   alias: ["speakhindi", "sayhindi", "sayinhindi"],
   desc: "Say somethong using bot in Hindi accent.",
   usage: "sayhindi <text>",
-  react: "🍁",
+  react: "🔉",
   category: "Essentials",
   start: async (Miku, m, { pushName, prefix, args, text, mime }) => {
     if (!text && m.quoted) {

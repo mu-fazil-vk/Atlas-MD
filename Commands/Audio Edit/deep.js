@@ -8,7 +8,7 @@ module.exports = {
   desc: "To add deep reverb in a song",
   category: "Audio Edit",
   usage: "blown <reply to audio>",
-  react: "🍁",
+  react: "🎶",
   start: async (Miku, m, { text, prefix, quoted, pushName, mime, body }) => {
     let media = await Miku.downloadAndSaveMediaMessage(quoted);
     let set = "-af atempo=4/4,asetrate=44500*2/3";

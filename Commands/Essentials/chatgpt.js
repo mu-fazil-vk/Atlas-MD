@@ -7,7 +7,7 @@ module.exports = {
     desc: "To communicate with Chat-GPT",
     category: "Essentials",
     usage: `.gpt <message>`,
-    react: "🍁",
+    react: "🚀",
     start: async (Miku, m, { text, prefix, args }) => {
 		var err;
 

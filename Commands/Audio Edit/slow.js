@@ -8,7 +8,7 @@ module.exports = {
   desc: "To add slow effect in a song",
   category: "Audio Edit",
   usage: "slow <reply to audio>",
-  react: "🍁",
+  react: "🎶",
   start: async (Miku, m, { text, prefix, quoted, pushName, mime, body }) => {
     let media = await Miku.downloadAndSaveMediaMessage(quoted);
     let set = '-filter:a "atempo=0.8,asetrate=44100"';

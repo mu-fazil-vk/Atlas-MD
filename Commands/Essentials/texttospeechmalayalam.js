@@ -5,7 +5,7 @@ module.exports = {
   alias: ["speakmalayalam","saymalayalam" ,"sayinmalayalam","ttsml","sayml"],
   desc: "Say somethong using bot in Malayalam.",
   usage: "ttsml <text>",
-  react: "🍁",
+  react: "🔉",
   category: "Essentials",
   start: async (Miku, m, { pushName, prefix, args, text, mime }) => {
     if (!text && m.quoted) {

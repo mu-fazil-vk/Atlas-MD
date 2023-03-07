@@ -8,7 +8,7 @@ module.exports = {
   desc: "To bass boost a song",
   category: "Audio Edit",
   usage: "bass <reply to audio>",
-  react: "🍁",
+  react: "🎶",
   start: async (Miku, m, { text, prefix, quoted, pushName, mime, body }) => {
     let media = await Miku.downloadAndSaveMediaMessage(quoted);
     let set = "-af equalizer=f=18:width_type=o:width=2:g=14";

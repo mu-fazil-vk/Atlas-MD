@@ -5,7 +5,7 @@ module.exports = {
     alias: ["ss"],
     desc: "Take a screenshot of a website without visiting it.",
     usage: "ss <link>",
-    react: "🍁",
+    react: "🚀",
     category: "Essentials",
     start: async(Miku, m,{pushName,prefix,args,text}) => {       
         if(!args[0]) return m.reply(`Please provide me a link to lookup !`);

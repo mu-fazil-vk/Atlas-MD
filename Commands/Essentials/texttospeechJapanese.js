@@ -5,7 +5,7 @@ module.exports = {
   alias: ["speakjapanese", "sayjapanese", "sayinjapnese", "sayja"],
   desc: "Say somethong using bot in Japanese accent.",
   usage: "sayjapanese <text>",
-  react: "🍁",
+  react: "🔉",
   category: "Essentials",
   start: async (Miku, m, { pushName, prefix, args, text, mime }) => {
     if (!text && m.quoted) {

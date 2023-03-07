@@ -5,7 +5,7 @@ module.exports = {
   alias: ["speak", "texttospeech", "tts"],
   desc: "Say somethong using bot.",
   usage: "say <text>",
-  react: "🍁",
+  react: "🔉",
   category: "Essentials",
   start: async (Miku, m, { pushName, prefix, args, text, mime }) => {
     if (!text && m.quoted) {

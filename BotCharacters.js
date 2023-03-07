@@ -30,13 +30,13 @@ Don't forget to change "charlist.js" and "setchar.js" insdide "Commands\Mods\"  
 
 global.charID0 = {
   botName : "Spark-X",
-  botVideo : "https://telegra.ph/file/0cc761cae21009312ac35.mp4",
+  botVideo : "https://telegra.ph/file/6f765fd2d2f514eea0fd5.mp4",
   botImage1 : "https://telegra.ph/file/b955ea0fa0455900af4a3.jpg",
   botImage2 : "https://telegra.ph/file/cb1b561d2a5013f482937.jpg",
-  botImage3 : "https://images7.alphacoders.com/121/1210002.png",
-  botImage4 : "https://images8.alphacoders.com/122/1223407.jpg",
-  botImage5 : "https://images7.alphacoders.com/121/1211490.jpg",
-  botImage6 : "https://images3.alphacoders.com/122/1223868.png",
+  botImage3 : "https://telegra.ph/file/6eb622e02dd83ffdce8ca.jpg",
+  botImage4 : "https://telegra.ph/file/bb36de66b4388243d85e8.jpg",
+  botImage5 : "https://telegra.ph/file/e9c16feaffb73fb5ce700.jpg",
+  botImage6 : "https://telegra.ph/file/a04ce31452b39b7026916.jpg",
 }
 
 global.charID1 = {

@@ -5,7 +5,7 @@ module.exports = {
   alias: ["udictionary", "udict"],
   desc: "To search something in Urban Dictionary",
   usage: "udict <text>",
-  react: "🍁",
+  react: "📖",
   category: "Essentials",
   start: async (Miku, m, { pushName, prefix, args, text }) => {
     if (!args[0])

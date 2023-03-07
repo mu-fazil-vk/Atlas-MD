@@ -8,7 +8,7 @@ module.exports = {
   desc: "To add robotic effect in a song",
   category: "Audio Edit",
   usage: "robot <reply to audio>",
-  react: "🍁",
+  react: "🎶",
   start: async (Miku, m, { text, prefix, quoted, pushName, mime, body }) => {
     let media = await Miku.downloadAndSaveMediaMessage(quoted);
     let set =
