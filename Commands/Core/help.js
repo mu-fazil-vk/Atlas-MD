@@ -597,7 +597,7 @@ textHelpMenu += `*🔰  ${botName}  🔰*
           },
         ];
   
-        
+  /*      
   if (botName == "Spark-X") {
     var botImages = [botVideo, botImage1, botImage2, botImage3, botImage4, botImage5, botImage6]
     const selectImage = botImages[Math.floor(Math.random() * botImages.length)];
@@ -611,7 +611,7 @@ textHelpMenu += `*🔰  ${botName}  🔰*
 
   await Miku.sendMessage(m.from, buttonMessage, { quoted: m });
   }else{
-
+    */
     let buttonMessage = {
       video: { url: botVideo },
       gifPlayback: true,
@@ -624,6 +624,6 @@ textHelpMenu += `*🔰  ${botName}  🔰*
     await Miku.sendMessage(m.from, buttonMessage, { quoted: m });
   }
 
-  }
+  //}
   }
 }
