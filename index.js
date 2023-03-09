@@ -215,7 +215,8 @@ async function startMiku() {
                 console.log("Connection TimedOut, Reconnecting...");
                 startMiku();
             } else {
-                console.log(`Disconnected: Reason "Probably your WhatsApp account Banned for Spamming !\n\nCheck your WhatsApp !"`)
+                console.log(`Disconnected: Reason "Probably your WhatsApp account Banned for Spamming !\n\nCheck your WhatsApp !"`);
+                process.exit(1);
             }
         }
         if (qr) {
